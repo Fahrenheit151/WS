@@ -1,0 +1,296 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Maven Pro', sans-serif;
+    color:#000000;
+    margin: 0;
+    
+}
+html {
+    font-size: 20px; 
+    min-width: 1200px;
+}
+.main {   
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;    
+    
+    background-color: #ffffff;
+    background-size: cover;
+    position: relative;    
+}
+.main-overlay {
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    z-index: 0;
+    /*background-image: -moz-linear-gradient(150deg,rgb(252, 210, 74) 0%, rgb(252, 210, 74) 60%);
+    /*background-image: -webkit-linear-gradient(150deg,rgb(252, 210, 74) 0%, rgb(252, 210, 74) 60%);
+    /*background-image: -ms-linear-gradient(150deg,rgb(252, 210, 74) 0%, rgb(252, 210, 74) 60%);   */
+}
+.header {
+    background-image: -webkit-linear-gradient(150deg,rgb(253, 212, 76) 0%, rgb(253, 212, 76) 95%);
+    box-shadow: 10px 10px 5px  rgba(143, 142, 108, 0.4);
+    display: flex;   
+    justify-content: space-between;        
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.menu {
+    width: 70%;       
+}
+.menu ul{
+    display: flex;    
+    justify-content: space-evenly;   
+    align-items: center;           
+    list-style: none;  
+    padding-left: 0; 
+    font-size: 0.8rem;    
+}
+.menu-link-back-white { 
+    color: #000000;  
+    text-decoration: none;    
+}
+.menu-link-back-yellow {   
+    color: #fff;
+    text-decoration: none;    
+}
+.menu-link {   
+    text-decoration: none;    
+}
+.menu li a {      
+     padding: 10px;     
+}
+.get-started-btn {     
+    border: 1px solid #fff;
+    border-radius: 100px; 
+    font-size: 0.8rem;
+    padding: 10px; 
+    display: initial;
+    margin-right: 50px; 
+  
+}
+.main-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    flex-direction: row;  
+    padding: 1rem; 
+    text-align: left;
+    box-shadow: 10px 10px 10px  rgb(253, 212, 76);
+}
+.main-text p { 
+    
+    font-size: 1rem;    
+}
+
+.item-tag {
+    align-items: center;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content:center;
+    flex-basis:0;
+    flex: 1 1 0;
+    padding:  0.5rem;   
+   
+}   
+.item-tag img{
+    width: 1rem;
+    height: 1rem;
+    align-items: center;
+}
+.main-nav { 
+  
+    position: relative;
+    z-index: 3;
+    height: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.main-nav img{ 
+  
+    box-shadow: 10px -10px 35px  rgba(0, 0, 0, 0.4);
+    border-radius:100px;
+  
+}       
+.table{
+    padding: 4rem 1rem 2rem;
+    background: rgb(252, 196, 11);
+    text-align: center;
+}
+
+.table_next{    
+    padding: 4rem 1rem 2rem;  
+}
+.table-header { 
+    text-align: center;
+
+}
+.header-info{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    text-align: center;    
+    justify-content: center;
+    align-items: center;
+}
+.header-info img{
+    align-self: baseline;
+    margin: 0.4rem;
+}
+.header-info p{
+    align-self: flex-start;
+    margin: 0;
+    margin-left: 2rem;
+}
+.header-info p span{
+    align-self: flex-start;
+    margin: 0;
+    margin-left: 2rem;
+    color: red;
+}
+
+
+.table-header p{ 
+    text-align: left;
+    
+}
+.table-footer{  
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.table_next-header {  
+
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.table-header span {
+    text-transform: uppercase;    
+    color: #ffffff;
+}
+.table_next-header span {
+    text-transform: uppercase;    
+    color: #000000;
+}
+.table_next-header span::after {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background-color:#000000;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 10px;
+}
+.table_next-header span::before {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background-color:#000000;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 10px; 
+}
+.table-header span::after {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background-color:#ffffff;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 10px;
+}
+.table-header span::before {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background-color: #fdfdfd;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 10px; 
+}
+.table-header p {
+    font-size: 1rem;
+    display: inline-block;
+    width: 20rem;
+    line-height: 1.4;
+    color: #000000;
+}
+.table-header h2 {
+    color: #000000;
+    font-size: 1.8rem;;
+    margin: 0;
+}
+.price-tags {    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.price-tag {
+    box-shadow: 0px 0px 81.88px 10.12px rgba(238, 255, 0, 0.71);
+    background-color: #fff;
+    border-radius: 2rem;
+    font-size: 1rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 15rem;
+    height: 20rem; 
+    transition: 0.2s;  
+}
+.price-tag:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 81.88px 10.12px rgba(100, 33, 21, 0.71);
+}
+.price-tag span {
+    font-size: 1rem;
+    text-transform: uppercase;
+  
+}
+.price-tag h4 {
+    font-size: 1rem;
+}
+.price-tag h4 sub{
+    font-size: 2rem;
+}
+.price-tag h4 sup{
+    vertical-align: super;
+    font-size: 1rem;
+    margin-right: 0.5rem;;
+}
+.price-tag p {
+    color: #4f4f6f;
+   
+}
+.price-btn {
+    background-color: #fff;
+    border: #4f4f6f 1px solid;
+    color: #4f4f6f;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 200;
+    padding: 1rem 4rem;
+    border-radius: 100px;
+    transition: 0.2s; 
+    margin: 2rem;   
+}
+.price-btn:hover {
+    background-color: rgb(253, 212, 76);
+    color: #fff;
+    font-weight: 500;
+}
